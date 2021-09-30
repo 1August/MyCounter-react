@@ -1,0 +1,14 @@
+.btn{
+    width: min-content;
+    height: min-content;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(61, 71, 120);
+}
+.btn:focus{
+    outline: none;
+}

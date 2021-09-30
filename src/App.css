@@ -1,0 +1,86 @@
+:root{
+    --button_position: -25px;
+    --bgcolorblock: #3D47BA;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+.App{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(253, 255, 0, .4);
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxWrapper{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: var(--bgcolorblock);
+    border-radius: 15%;
+}
+.numberWrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.name{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-family: Roboto;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.number{
+    font-size: 4rem;
+    place-self: center;
+}
+
+button{
+    font-size: 3rem;
+    line-height: 3rem;
+    /*width: min-content;*/
+    /*height: min-content;*/
+    /*color: #fff;*/
+    /*background-color: transparent;*/
+    /*border: none;*/
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(61, 71, 120);
+}
+button:focus{
+    outline: none;
+}
+
+.decrease{
+    position: absolute;
+    left: var(--button_position);
+}
+.increase{
+    position: absolute;
+    right: var(--button_position);
+}
+.clear{
+    position: absolute;
+    left: calc(100px - 1.5rem);
+    bottom: var(--button_position);
+}
+.increase, .decrease, .clear{
+    border: 1px solid #fff;
+    background-color: var(--bgcolorblock);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.increase, .decrease{
+    top: calc(100px - 1.5rem);
+}
